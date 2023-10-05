@@ -1,9 +1,7 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <div>
-      Start Project
+    <div className="">
+      Start Project 
     </div>
   )
 }

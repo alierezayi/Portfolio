@@ -1,6 +1,8 @@
+"use client"
+
 export default function Home() {
   return (
-    <div className="">
+    <div>
       Start Project 
     </div>
   )

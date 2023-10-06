@@ -6,7 +6,9 @@ import TopLeftImg from "@/components/TopLeftImg";
 import Nav from "@/components/Nav";
 
 import "./globals.css";
+import FramerMotionWrapper from "@/providers/FramerMotionWrapper";
 
+// font style
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -26,12 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sora.className}>
-        <div className="page bg-site text-white bg-cover bg-no-repeat relative">
-          <TopLeftImg />
-          <Nav />
-          <Header />
-          {children}
-        </div>
+        <FramerMotionWrapper>
+          <div className="page bg-site text-white bg-cover bg-no-repeat relative">
+            <TopLeftImg />
+            <Nav />
+            <Header />
+            {children}
+          </div>
+        </FramerMotionWrapper>
       </body>
     </html>
   );

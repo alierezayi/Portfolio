@@ -6,8 +6,8 @@ const MainLayoutProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="page bg-site text-white bg-cover bg-no-repeat relative">
       <TopLeftImg />
-      <Header />
       <Nav />
+      <Header />
       {children}
     </div>
   );

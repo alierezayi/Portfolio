@@ -122,7 +122,7 @@ const aboutData: AboutDataItem[] = [
   },
 ];
 
-const About = () => {
+const AboutPage = () => {
   const [index, setIndex] = useState(0);
 
   return (
@@ -261,4 +261,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

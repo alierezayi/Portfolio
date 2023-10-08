@@ -9,7 +9,7 @@ const Bulb = () => {
         height={200}
         alt=""
         className="w-full h-full"
-      />{" "}
+      />
     </div>
   );
 };

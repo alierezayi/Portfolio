@@ -1,5 +1,7 @@
 "use client";
+
 import Transition from "@/components/Transition";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const FramerMotionWrapper = ({ children }: { children: React.ReactNode }) => {

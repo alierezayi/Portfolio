@@ -18,8 +18,14 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
+type ServiceData = {
+  icon: JSX.Element;
+  title: string;
+  description: string;
+};
+
 // data
-const serviceData = [
+const serviceData: ServiceData[] = [
   {
     icon: <RxCrop />,
     title: "Branding",
@@ -47,7 +53,7 @@ const serviceData = [
   },
 ];
 
-const ServiceSlider = () => {
+const ServiceSlider: React.FC = () => {
   return (
     <Swiper
       breakpoints={{

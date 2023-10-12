@@ -8,7 +8,7 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
-const Socials = () => {
+const Socials: React.FC = () => {
   return (
     <div className="flex items-center gap-x-5 text-xl">
       <Link

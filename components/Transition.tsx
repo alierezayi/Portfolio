@@ -1,6 +1,22 @@
 import { motion } from "framer-motion";
 
-const transitionVariants = {
+type Points = {
+  x: string;
+  width: string;
+};
+
+type ExitPoints = {
+  x: string[];
+  width: string[];
+};
+
+type TransitionVariants = {
+  initial: Points;
+  animate: Points;
+  exit: ExitPoints;
+};
+
+const transitionVariants: TransitionVariants = {
   initial: {
     x: "100%",
     width: "100%",
@@ -15,7 +31,7 @@ const transitionVariants = {
   },
 };
 
-const Transition = () => {
+const Transition: React.FC = () => {
   return (
     <>
       <motion.div

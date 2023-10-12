@@ -6,9 +6,9 @@ import TestimonialSlider from "@/components/TestimonialSlider";
 
 import { fadeIn } from "@/lib/variants-utils";
 
-const TestimonialsPage = () => {
+const TestimonialsPage: React.FC = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center">
+    <div className="h-full bg-primary/30  text-center">
       <div className="container mx-auto h-full min-h-screen flex flex-col justify-center">
         <motion.h2
           variants={fadeIn("up", 0.2)}

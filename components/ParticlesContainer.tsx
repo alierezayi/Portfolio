@@ -1,8 +1,8 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const ParticlesContainer = () => {
+const ParticlesContainer: React.FC = () => {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);

@@ -4,9 +4,9 @@ import { Sora } from "next/font/google";
 import Header from "@/components/Header";
 import TopLeftImg from "@/components/TopLeftImg";
 import Nav from "@/components/Nav";
+import FramerMotionWrapper from "@/providers/FramerMotionWrapper";
 
 import "./globals.css";
-import FramerMotionWrapper from "@/providers/FramerMotionWrapper";
 
 // font style
 const sora = Sora({

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { fadeIn } from "@/lib/variants-utils";
 
-const ContactPage = () => {
+const ContactPage: React.FC = () => {
   return (
     <div className="h-full bg-primary/30 min-h-screen">
       <div className="container mx-auto py-32 text-center xl:text-left flex justify-center items-center h-full">

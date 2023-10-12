@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-
+import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
 import Circles from "@/components/Circles";
 import Avatar from "@/components/Avatar";
+
+import { fadeIn } from "@/lib/variants-utils";
 
 import {
   FaHtml5,
@@ -22,54 +24,42 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
-import { fadeIn } from "@/lib/variants-utils";
-import CountUp from "react-countup";
 
-interface SkillInfo {
+type InfoItem = {
   title: string;
-  icons: React.ReactNode[];
-}
+  icons?: JSX.Element[];
+  stage?: string;
+};
 
-interface AwardInfo {
+type AboutData = {
   title: string;
-  stage: string;
-}
-
-interface ExperienceInfo {
-  title: string;
-  stage: string;
-}
-
-interface CredentialInfo {
-  title: string;
-  stage: string;
-}
-
-interface AboutDataItem {
-  title: string;
-  info: SkillInfo[] | AwardInfo[] | ExperienceInfo[] | CredentialInfo[];
-}
+  info: InfoItem[];
+};
 
 //  data
-const aboutData: AboutDataItem[] = [
+const aboutData: AboutData[] = [
   {
     title: "skills",
     info: [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="adobephotoshop" />,
+        ],
       },
     ],
   },
@@ -122,8 +112,8 @@ const aboutData: AboutDataItem[] = [
   },
 ];
 
-const AboutPage = () => {
-  const [index, setIndex] = useState(0);
+const AboutPage: React.FC = () => {
+  const [index, setIndex] = useState<number>(0);
 
   return (
     <div className="h-full min-h-screen bg-primary/30 py-32 text-center xl:text-left">
@@ -234,7 +224,7 @@ const AboutPage = () => {
           </div>
 
           <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, indexItem) => (
+            {aboutData[index].info.map((item, indexItem: number) => (
               <div
                 key={indexItem}
                 className="flex flex-1 flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
@@ -246,7 +236,7 @@ const AboutPage = () => {
                 <div>{item.stage}</div>
 
                 <div className="flex gap-x-2">
-                  {item.icons?.map((item, indexItem) => (
+                  {item.icons?.map((item, indexItem: number) => (
                     <div key={indexItem} className="text-2xl text-white">
                       {item}
                     </div>

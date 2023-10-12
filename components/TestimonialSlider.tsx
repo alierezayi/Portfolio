@@ -11,8 +11,15 @@ import Image from "next/image";
 
 import { FaQuoteLeft } from "react-icons/fa";
 
+type TestimonialData = {
+  image: string;
+  name: string;
+  position: string;
+  message: string;
+};
+
 // testimonial data
-const testimonialData = [
+const testimonialData: TestimonialData[] = [
   {
     image: "/t-avt-1.png",
     name: "Anne Smith",
@@ -39,8 +46,8 @@ const testimonialData = [
 const TestimonialSlider = () => {
   return (
     <Swiper
-    navigation={true}
-    pagination={{
+      navigation={true}
+      pagination={{
         clickable: true,
       }}
       modules={[Pagination, Navigation]}
@@ -57,7 +64,9 @@ const TestimonialSlider = () => {
 
                 <div className="text-lg">{person.name}</div>
 
-                <div className="text-[12px] uppercase font-extralight">{person.position}</div>
+                <div className="text-[12px] uppercase font-extralight">
+                  {person.position}
+                </div>
               </div>
             </div>
 

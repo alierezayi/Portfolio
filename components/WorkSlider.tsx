@@ -11,8 +11,21 @@ import Image from "next/image";
 
 import { BsArrowRight } from "react-icons/bs";
 
+type Images = {
+  title: string;
+  path: string;
+};
+
+type Slides = {
+  images: Images[];
+};
+
+type WorkSlides = {
+  slides: Slides[];
+};
+
 // data
-const workSlides = {
+const workSlides: WorkSlides = {
   slides: [
     {
       images: [
@@ -57,7 +70,7 @@ const workSlides = {
   ],
 };
 
-const WorkSlider = () => {
+const WorkSlider: React.FC = () => {
   return (
     <Swiper
       spaceBetween={10}

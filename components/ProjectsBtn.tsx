@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { HiArrowRight } from "react-icons/hi2";
 
-const ProjectsBtn = () => {
+const ProjectsBtn: React.FC = () => {
   return (
     <div className="mx-auto xl:mx-0">
       <Link

@@ -8,7 +8,7 @@ import ServiceSlider from "@/components/ServiceSlider";
 
 import { fadeIn } from "@/lib/variants-utils";
 
-const ServicesPage = () => {
+const ServicesPage: React.FC = () => {
   return (
     <div className="h-full min-h-screen bg-primary/30 py-36 flex items-center">
       <Circles />

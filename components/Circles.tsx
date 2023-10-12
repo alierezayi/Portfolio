@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-
-const Circles = () => {
+const Circles: React.FC = () => {
   return (
     <div className="w-[200px] xl:w-[300px] absolute -right-10 -bottom-0 mix-blend-color-dodge animate-pulse duration-75 z-10">
       <Image
@@ -11,7 +10,6 @@ const Circles = () => {
         alt=""
         className="w-full h-full"
       />{" "}
-      
     </div>
   );
 };

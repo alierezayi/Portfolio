@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,8 +13,14 @@ import {
   HiEnvelope,
 } from "react-icons/hi2";
 
+type NavData = {
+  name: string;
+  path: string;
+  icon: JSX.Element;
+};
+
 // nav data
-export const navData = [
+export const navData: NavData[] = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
   { name: "services", path: "/services", icon: <HiRectangleGroup /> },
@@ -30,7 +37,7 @@ export const navData = [
   },
 ];
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const pathname = usePathname();
 
   return (

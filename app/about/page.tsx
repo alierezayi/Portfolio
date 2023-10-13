@@ -120,7 +120,7 @@ const AboutPage: React.FC = () => {
       <Circles />
 
       <motion.div
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[250px] w-full h-full max-w-[550px] max-h-[470px]"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"

@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into
+            Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
           </motion.h1>
 
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             ease: "easeInOut",
           }}
           exit="hidden"
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]"
+          className="w-full h-full max-w-[550px] max-h-[470px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]"
         >
           <Avatar />
         </motion.div>

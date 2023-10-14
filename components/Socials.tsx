@@ -1,28 +1,35 @@
 import Link from "next/link";
 
 import {
-  RiYoutubeLine,
   RiInstagramLine,
   RiFacebookLine,
   RiTwitterXLine,
 } from "react-icons/ri";
 import { FiLinkedin } from "react-icons/fi";
 import { LiaTelegramPlane } from "react-icons/lia";
+import { TbBrandGithub } from "react-icons/tb";
+
+const githubID = "alierezayi";
+const facebookID = "profile.php?id=61552384168244&mibextid=9R9pXO";
+const instagramID = "ali._rezuyi?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D";
+const telegramID = "AliRezuyi";
+const linkedinID = "ali-rezaei-129414237";
+const twitterID = "AliRezuyi";
 
 const Socials: React.FC = () => {
   return (
     <div className="flex items-center gap-x-5 text-xl">
       <Link
         target="blank"
-        href="https://www.youtube.com/channel/UCj-GaPj3JZ121KbO-3He8Uw"
+        href={`https://github.com/${githubID}`}
         className="hover:text-accent transition-all duration-300"
       >
-        <RiYoutubeLine />
+        <TbBrandGithub />
       </Link>
 
       <Link
         target="blank"
-        href="https://www.facebook.com/profile.php?id=61552384168244&mibextid=9R9pXO"
+        href={`https://facebook.com/${facebookID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <RiFacebookLine />
@@ -30,7 +37,7 @@ const Socials: React.FC = () => {
 
       <Link
         target="blank"
-        href="https://instagram.com/ali._rezuyi?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+        href={`https://instagram.com/${instagramID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <RiInstagramLine />
@@ -38,7 +45,7 @@ const Socials: React.FC = () => {
 
       <Link
         target="blank"
-        href="https://t.me/AliRezuyi"
+        href={`https://t.me/${telegramID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <LiaTelegramPlane />
@@ -46,7 +53,7 @@ const Socials: React.FC = () => {
 
       <Link
         target="blank"
-        href="https://www.linkedin.com/in/ali-rezaei-129414237"
+        href={`https://linkedin.com/in/${linkedinID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <FiLinkedin />
@@ -54,7 +61,7 @@ const Socials: React.FC = () => {
 
       <Link
         target="blank"
-        href="https://twitter.com/AliRezuyi"
+        href={`https://twitter.com/${twitterID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <RiTwitterXLine />

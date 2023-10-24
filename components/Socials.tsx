@@ -3,11 +3,10 @@ import Link from "next/link";
 import {
   RiInstagramLine,
   RiFacebookLine,
-  RiTwitterXLine,
+  RiLinkedinLine,
+  RiTwitterLine,
 } from "react-icons/ri";
-import { FiLinkedin } from "react-icons/fi";
 import { LiaTelegramPlane } from "react-icons/lia";
-import { TbBrandGithub } from "react-icons/tb";
 
 const githubID = "alierezayi";
 const facebookID = "profile.php?id=61552384168244&mibextid=9R9pXO";
@@ -19,13 +18,13 @@ const twitterID = "AliRezuyi";
 const Socials: React.FC = () => {
   return (
     <div className="flex items-center gap-x-5 text-xl">
-      <Link
+      {/* <Link
         target="blank"
         href={`https://github.com/${githubID}`}
         className="hover:text-accent transition-all duration-300"
       >
         <TbBrandGithub />
-      </Link>
+      </Link> */}
 
       <Link
         target="blank"
@@ -53,18 +52,18 @@ const Socials: React.FC = () => {
 
       <Link
         target="blank"
-        href={`https://linkedin.com/in/${linkedinID}`}
+        href={`https://twitter.com/${twitterID}`}
         className="hover:text-accent transition-all duration-300"
       >
-        <FiLinkedin />
+        <RiTwitterLine />
       </Link>
 
       <Link
         target="blank"
-        href={`https://twitter.com/${twitterID}`}
+        href={`https://linkedin.com/in/${linkedinID}`}
         className="hover:text-accent transition-all duration-300"
       >
-        <RiTwitterXLine />
+        <RiLinkedinLine />
       </Link>
     </div>
   );

@@ -10,8 +10,8 @@ const Header: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           <Link href="/">
             <h3 className="text-[30px]">
-              <span className="font-black">Ali</span>{" "}
-              <span className="font-light">Rezayi</span>{" "}
+              {/* <span className="font-black">Personal</span>{" "} */}
+              <span className="font-light">Portfolio</span>{" "}
               <span className="text-accent">.</span>
             </h3>
           </Link>

@@ -33,7 +33,7 @@ const Home: React.FC = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-12 xl:mb-10 z-10"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 z-10"
           >
             <p>
               Hello, I&apos;m Ali. I&apos;m a{" "}
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               contact me.
             </p>
 
-            <div className="flex  items-center gap-4 mt-5">
+            <div className="flex justify-center xl:justify-start items-center gap-4 mt-5">
               <Link
                 className="group h-12 px-7 py-3 flex items-center gap-2 z-10 rounded-full  outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack bg-white/10"
                 href="/Ali_Rezaei.pdf"

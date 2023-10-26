@@ -45,12 +45,12 @@ const Home: React.FC = () => {
 
             <div className="flex justify-center xl:justify-start items-center gap-4 mt-5">
               <Link
-                className="group h-12 px-7 py-3 flex items-center gap-2 z-10 rounded-full  outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack bg-white/10"
+                className="group h-12 px-7 py-3 flex font-medium items-center gap-2 z-10 rounded-full  outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack bg-white/10"
                 href="/Ali_Rezaei.pdf"
                 download
               >
                 Download CV{" "}
-                <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                <HiDownload size={20} className="opacity-60 group-hover:translate-y-1 transition-transform" />
               </Link>
 
               <Link

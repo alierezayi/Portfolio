@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <Link href="/">
             <h3 className="text-[30px]">
               {/* <span className="font-black">Personal</span>{" "} */}
-              <span className="font-light">Portfolio</span>{" "}
+              <span className="font-light">Resume</span>{" "}
               <span className="text-accent">.</span>
             </h3>
           </Link>

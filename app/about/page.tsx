@@ -91,6 +91,10 @@ const aboutData: AboutData[] = [
     title: "education",
     info: [
       {
+        title: "Field of Study",
+        stage: "Computer Engineering",
+      },
+      {
         title: "Branch",
         stage: "IT",
       },

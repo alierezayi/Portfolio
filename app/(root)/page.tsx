@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 import ProjectsBtn from "@/components/ProjectsBtn";
@@ -7,9 +8,8 @@ import ParticlesContainer from "@/components/ParticlesContainer";
 import Avatar from "@/components/Avatar";
 
 import { fadeIn } from "@/lib/variants-utils";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+
 import { HiDownload } from "react-icons/hi";
-import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
 
 const Home: React.FC = () => {
@@ -50,7 +50,10 @@ const Home: React.FC = () => {
                 download
               >
                 Download CV{" "}
-                <HiDownload size={20} className="opacity-60 group-hover:translate-y-1 transition-transform" />
+                <HiDownload
+                  size={20}
+                  className="opacity-60 group-hover:translate-y-1 transition-transform"
+                />
               </Link>
 
               <Link

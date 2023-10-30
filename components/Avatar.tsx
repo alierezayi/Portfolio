@@ -8,7 +8,7 @@ const Avatar: React.FC = () => {
         width={737}
         height={678}
         alt=""
-        className="w-full h-full"
+        className="w-full h-full hidden"
       />
     </div>
   );

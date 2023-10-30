@@ -95,59 +95,63 @@ const mySkills = [
 
 const SkillsPage: React.FC = () => {
   return (
-    <div className="h-full min-h-screen bg-primary/30 py-36 flex items-center">
-      <Circles />
+    <>
+      <ParticlesContainer />
 
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
-            <motion.h2
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="h2 xl:mt-8"
-            >
-              My Skills <span className="text-accent">.</span>
-            </motion.h2>
+      <div className="h-full min-h-screen bg-primary/30 py-36 flex items-center">
+        <Circles />
 
-            <motion.p
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto xl:mx-0"
-            >
-              Languages and technologies that I master and use in my projects
-            </motion.p>
-          </div>
-
-          <motion.div
-            variants={fadeIn("down", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="w-full xl:max-w-[65%] gap-5 max-h-[350px] overflow-y-auto xl:overflow-visible
-              flex flex-wrap justify-center items-center"
-          >
-            {mySkills.map((item, index) => (
-              <Link
-                href={item.url}
-                key={index}
-                className="flex justify-center items-center gap-2 py-3 px-4 rounded-lg bg-white/10 hover:scale-105 transition"
+        <div className="container mx-auto">
+          <div className="flex flex-col xl:flex-row gap-x-8">
+            <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+              <motion.h2
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="h2 xl:mt-8 z-10"
               >
-                <div className="">
-                  <Image src={item.image} width={25} height={25} alt="" />
-                </div>
+                My Skills <span className="text-accent">.</span>
+              </motion.h2>
 
-                <h2>{item.name}</h2>
-              </Link>
-            ))}
-          </motion.div>
+              <motion.p
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="mb-4 max-w-[400px] mx-auto xl:mx-0 z-10"
+              >
+                Languages and technologies that I master and use in my projects
+              </motion.p>
+            </div>
+
+            <motion.div
+              variants={fadeIn("down", 0.6)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="w-full xl:max-w-[65%] gap-5 max-h-[350px] overflow-y-auto xl:overflow-visible
+              flex flex-wrap justify-center items-center z-10"
+            >
+              {mySkills.map((item, index) => (
+                <Link
+                  href={item.url}
+                  key={index}
+                  className="flex justify-center items-center gap-2 py-3 px-4 rounded-lg bg-white/10 hover:scale-105 transition"
+                >
+                  <div className="">
+                    <Image src={item.image} width={25} height={25} alt="" />
+                  </div>
+
+                  <h2>{item.name}</h2>
+                </Link>
+              ))}
+            </motion.div>
+          </div>
         </div>
+        <Bulb />
       </div>
-      <Bulb />
-    </div>
+    </>
   );
 };
 

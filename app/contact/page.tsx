@@ -28,13 +28,7 @@ const ContactPage: React.FC = () => {
             exit="hidden"
             className="flex flex-1 flex-col gap-6 w-full mx-auto"
           >
-            <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-
-              <input type="text" placeholder="email" className="input" />
-            </div>
-
-            <input type="text" placeholder="subject" className="input" />
+            <input type="text" placeholder="email" className="input" />
 
             <textarea placeholder="message" className="textarea" />
 

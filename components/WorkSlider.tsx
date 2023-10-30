@@ -31,39 +31,19 @@ const workSlides: WorkSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/Home-page-Shopping.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/Admin-Dashboard.png",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/Spotify-Clone (2).png",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
+          path: "/Weblog (2).png",
         },
       ],
     },
